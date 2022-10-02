@@ -12,13 +12,13 @@ variable "instance_type" {
 
 # Variable to signal the current environment 
 variable "env" {
-  default     = "dev"
+  default     = "env_dev"
   type        = string
   description = "Deployment Environment"
 }
 
 variable "ecr_repo" {
-  default     = ["app", "mysql"]
+  default     = ["web", "datab"]
   type        = set(string)
   description = "Amazon ECR Repository Names"
 }
