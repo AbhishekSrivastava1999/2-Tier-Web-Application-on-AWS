@@ -31,9 +31,9 @@ jobs:
           ls -ltra
                     
           # Building Docker image for mysql
-          docker build -f Dockerfile_mysql -t $ECR_REGISTRY/ass02-dev-datab:v1.0 .
-          docker push $ECR_REGISTRY/ass02-dev-datab:v1.0
+          docker build -f Dockerfile_mysql -t $ECR_REGISTRY/ass02-dev-datab:v2.0 .
+          docker push $ECR_REGISTRY/ass02-dev-datab:v2.0
 
           # Building docker for webapp
-          docker build -f Dockerfile -t $ECR_REGISTRY/ass02-dev-web:v1.0 .
-          docker push $ECR_REGISTRY/ass02-dev-web:v1.0
+          docker build -f Dockerfile -t $ECR_REGISTRY/ass02-dev-web:v2.0 .
+          docker push $ECR_REGISTRY/ass02-dev-web:v2.0
