@@ -31,9 +31,9 @@ jobs:
           ls -ltra
                     
           # Building Docker image for mysql
-          docker build -f Dockerfile_mysql -t 105718917616.dkr.ecr.us-east-1.amazonaws.com/datab:v1.0 .
-          docker push 105718917616.dkr.ecr.us-east-1.amazonaws.com/datab:v1.0
+          docker build -f Dockerfile_mysql -t 105718917616.dkr.ecr.us-east-1.amazonaws.com/datab:v2.0 .
+          docker push 105718917616.dkr.ecr.us-east-1.amazonaws.com/datab:v2.0
 
           # Building docker for webapp
-          docker build -f Dockerfile -t 105718917616.dkr.ecr.us-east-1.amazonaws.com/web:v1.0 .
-          docker push 105718917616.dkr.ecr.us-east-1.amazonaws.com/web:v1.0
+          docker build -f Dockerfile -t 105718917616.dkr.ecr.us-east-1.amazonaws.com/web:v2.0 .
+          docker push 105718917616.dkr.ecr.us-east-1.amazonaws.com/web:v2.0
